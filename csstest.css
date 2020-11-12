@@ -1,0 +1,98 @@
+body {
+  background-image: url("https://cdn.glitch.com/28de17f9-f26d-4799-888c-eed5caea2625%2Fpatrick-tomasso-QMDap1TAu0g-unsplash.jpg?v=1605150775803");
+  background-color: #cccccc;
+  border: 2px solid black;
+  padding: 25px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  font-family: 'Goldman';
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  padding: 50px;
+  height: 300px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.bluebox {
+  background-color: #FF6B4A;
+  font-family: Georgia BLack;
+  text-align: center;
+  color: #ffffff;
+}
+
+.cyanbox {
+  background-color: #C62300;
+  font-family: Georgia Black;
+  text-align: center;
+  overflow: auto;
+}
+
+.orangebox {
+  background-color: #E92A01;
+  font-family: Calibri;
+  font-weight: lighter;
+  text-align: center;
+  color: white;
+}
+
+.yellowbox {
+  background-color: #A01C00;
+  font-family: Georgia BLack;
+  text-align: center;
+}
+
+.blackbox {
+  background-color: #FF3104;
+  color: #ffffff;
+  font-family: Arial BLack;
+  text-align: center;
+}
+
+.threecol {
+  width: 33.33%;
+}
+
+.twocol {
+  width: 50%;
+}
+
+.onecol {
+  width: 100%;
+}
+
+a {
+  border: 2px solid cyan;
+  padding: 10px;
+  text-decoration: none;
+}
+
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: cyan;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
