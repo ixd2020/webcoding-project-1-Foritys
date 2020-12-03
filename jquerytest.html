@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Salvador Dali Collection</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/jquerytest.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goldman&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("h1, h2, p").toggleClass("blue");
+    $("div").toggleClass("important");
+  });
+});
+</script>
+    <style>
+    .important {
+  color:yellow;
+  background-color:black;
+  padding:20px;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.blue {
+  color: blue;
+  background-color: orange;
+  padding:20px;
+  border: 5px solid black;
+  
+}
+    </style>
+  </head>
+  <body style="background-color:lightgrey;">
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<div>This is some important text!</div><br>
+
+<button>Add classes to elements</button>
+
+
+  </body>
+</html>

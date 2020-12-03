@@ -77,8 +77,28 @@ function animateValue(id, start, end, duration) {
     run();
 }
 
-animateValue("value", 1, 53, 3000);
+animateValue("value", 1, 53, 6000);
 
-animateValue("value2", 1000, 1500, 3000);
+animateValue("value2", 1000, 1500, 6000);
 
-animateValue("value3", 1, 30, 3000);
+animateValue("value3", 1, 30, 6000);
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}

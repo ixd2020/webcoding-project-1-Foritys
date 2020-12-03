@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UWU</title>
+    <body style="background-color: #006171;"></body>
+
+    <link rel="stylesheet" href="/domtest.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goldman&display=swap"
+      rel="stylesheet"
+    
+    />
+    
+  </head>
+  
+  <body>
+    <!DOCTYPE html>
+
+
+<h2>My First Page</h2>
+
+<p id="demo"></p>
+
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:orange;width:120px;height:20px;padding:40px;">
+FIRST TIME</div>
+    
+<h1 onmouseover="hmOver(this)" onmouseout="hmOut(this)" >
+ H1</h1>
+
+<p onmouseover="pmOver(this)" onmouseout="pmOut(this)" >
+ Insert interesting stuff</p>
+    
+<button id="myBtn">Try it</button>
+<script>
+document.getElementById("demo").innerHTML = "TEST";
+function mOver(obj) {
+  obj.innerHTML = "IN"
+}
+
+
+function mOut(obj) {
+  obj.innerHTML = "OUT"
+}
+
+document.getElementById("demo").innerHTML = "TEST";
+function hmOver(obj) {
+  obj.innerHTML = "SIKEEE"
+}
+
+document.getElementById("demo").innerHTML = "TEST";
+function hmOut(obj) {
+  obj.innerHTML = "BAI"
+}
+  
+document.getElementById("demo").innerHTML = "TEST";
+function pmOver(obj) {
+  obj.innerHTML = "INSERT TEXTTT"
+}
+
+document.getElementById("demo").innerHTML = "TEST";
+function pmOut(obj) {
+  obj.innerHTML = "IDK WHAT TO PUTT"
+}
+  
+document.getElementById("myBtn").addEventListener("click", myFunction);
+
+function myFunction() {
+  alert ("YOU FOOL");
+}
+</script>
+
+
+  </body>
+</html>
