@@ -8,76 +8,328 @@
     <title>Artworks</title>
 
     <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="jarallax.css" />
     <link rel="stylesheet" href="/art.css" />
 
     <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-  </head>
-  <body style="background-color:lightgrey;"></body>
+    <script src="/art.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="anime.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
+  </head>
   <body>
     <div class="container">
-      <li><a href="/index.html" class="cool-link">Home</a></li>
-      <li><a href="/info.html" class="cool-link">Info</a></li>
-      <li><a href="/news.html" class="cool-link">News</a></li>
-      <li><a href="/about.html" class="cool-link">About</a></li>
-      <li><a href="/art.html" class="cool-link">Works</a></li>
-      <li><a href="#" class="cool-link">Contact</a></li>
-    </div>
-    <h1 style="font-size:30px; text-align:center;">Artworks</h1>
-    <div class="artdeli1" id="artdeli1">
-      <img
-        src="https://cdn.glitch.com/28de17f9-f26d-4799-888c-eed5caea2625%2Fsalvador-dali-2527662_1280.jpg?v=1604547301898"
-        width="190"
-        height="250"
-      />
-      <p style="text-align:center;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et enim
-        et est viverra rutrum sit amet at ante. Suspendisse eu semper turpis.
-        Vivamus ac semper nulla, venenatis scelerisque ligula. Suspendisse
-        sagittis eget est ut viverra. Duis quis augue sit amet massa ullamcorper
-        eleifend. Vestibulum euismod quam neque, a pretium neque interdum in.
-        Curabitur quis turpis vel mauris tempus auctor. Duis enim magna,
-        ullamcorper vel sagittis eu, fermentum eget odio. Vestibulum vulputate
-        elit vitae sapien sollicitudin, ac congue mi sollicitudin. Mauris
-        rhoncus tellus et libero congue, nec viverra mi lobortis.
-      </p>
-    </div>
-    <div class="artdeli2" id="artdeli2">
-      <img
-        src="https://cdn.glitch.com/28de17f9-f26d-4799-888c-eed5caea2625%2FDal%C3%AD._Gala.jpg?v=1604547313379"
-        width="190"
-        height="250"
-      />
-      <p style="text-align:center;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et enim
-        et est viverra rutrum sit amet at ante. Suspendisse eu semper turpis.
-        Vivamus ac semper nulla, venenatis scelerisque ligula. Suspendisse
-        sagittis eget est ut viverra. Duis quis augue sit amet massa ullamcorper
-        eleifend. Vestibulum euismod quam neque, a pretium neque interdum in.
-        Curabitur quis turpis vel mauris tempus auctor. Duis enim magna,
-        ullamcorper vel sagittis eu, fermentum eget odio. Vestibulum vulputate
-        elit vitae sapien sollicitudin, ac congue mi sollicitudin. Mauris
-        rhoncus tellus et libero congue, nec viverra mi lobortis.
-      </p>
-    </div>
-    <div class="artdeli3" id="artdeli3">
-      <img
-        src="https://cdn.glitch.com/28de17f9-f26d-4799-888c-eed5caea2625%2FSalvador_DalI%2C_Portrait_of_Madame_Isabel_Styler-Tas_(Melancolia)%2C_1945%2C_Scharf-Gerstenberg_Museum%2C_Berlin%2C_(2)_(26332791998).jpg?v=1604547340834"
-        width="400"
-        height="250"
-      />
-      <p style="text-align:center;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et enim
-        et est viverra rutrum sit amet at ante. Suspendisse eu semper turpis.
-        Vivamus ac semper nulla, venenatis scelerisque ligula. Suspendisse
-        sagittis eget est ut viverra. Duis quis augue sit amet massa ullamcorper
-        eleifend. Vestibulum euismod quam neque, a pretium neque interdum in.
-        Curabitur quis turpis vel mauris tempus auctor. Duis enim magna,
-        ullamcorper vel sagittis eu, fermentum eget odio. Vestibulum vulputate
-        elit vitae sapien sollicitudin, ac congue mi sollicitudin. Mauris
-        rhoncus tellus et libero congue, nec viverra mi lobortis.
-      </p>
+      <div class="navbar">
+        <div class="menu">
+          <h3 class="logo">Salvador<span>Dali</span></h3>
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container">
+        <div class="main">
+          <section>
+            <br />
+            <br />
+            <h4 class="ml8">
+              <span class="letters-container">
+                <span class="letters letters-left">Artworks</span>
+              </span>
+              <span class="circle circle-white"></span>
+              <span class="circle circle-dark"></span>
+              <span class="circle circle-container"
+                ><span class="circle circle-dark-dashed"></span
+              ></span>
+                <button onclick="myFunction()">Toggle Header Color</button>
+            </h4>
+            <br />
+            <br>
+            <br>
+            <div class="bax">
+              <h2 data-jarallax-element="0 -200">
+                Lobster Telephone
+              </h2>
+              <div class="containerz">
+                <div class="imgBx jarallax">
+                  <img
+                    src="https://cdn.glitch.com/89bebd75-9266-43eb-a860-078a6c5c0bf5%2FLobster-Phone_(4479669148).jpg?v=1608098696164"
+                    class="jarallax-img"
+                  />
+                </div>
+                <div class="content" data-jarallax-element="-200 0">
+                  <p>
+                    <b>Date</b>: 1938 <br />
+                    <b>Medium</b>: Steel, plaster, rubber, resin and paper
+                    <br />
+                    <b>Dimensions</b>: 178 × 330 × 178 mm <br />
+                    <b>Original Title</b>: Téléphone - Homard<br />
+                    <b>Description</b>: Lobsters and telephones are strong
+                    sexual connotations for Dalí himself. The telephone often
+                    appears in certain paintings of the late 1930s such as
+                    Mountain Lake, and the lobster appears in drawings and
+                    designs, usually associated with erotic pleasure and pain.
+                    In Lobster Telephone, the lobster's tail, where its sexual
+                    parts are located, is placed directly over the mouthpiece of
+                    the telephone.<br />
+                    <b
+                      >Attribution:
+                      <a
+                        href="https://commons.wikimedia.org/wiki/File:Lobster-Phone_(4479669148).jpg"
+                        >Milestoned from Deutschland(Germany)</a
+                      >,
+                      <a href="https://creativecommons.org/licenses/by/2.0"
+                        >CC BY 2.0</a
+                      >, via Wikimedia Commons</b
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="bax">
+              <h2 data-jarallax-element="0 200">
+                Portrait of Mrs. Isabel Styler-Tas
+              </h2>
+              <div class="containerz">
+                <div class="imgBx jarallax">
+                  <img
+                    src="https://cdn.glitch.com/28de17f9-f26d-4799-888c-eed5caea2625%2FSalvador_DalI%2C_Portrait_of_Madame_Isabel_Styler-Tas_(Melancolia)%2C_1945%2C_Scharf-Gerstenberg_Museum%2C_Berlin%2C_(2)_(26332791998).jpg?v=1604547340834"
+                    class="jarallax-img"
+                  />
+                </div>
+                <div class="content" data-jarallax-element="-200 0">
+                  <p>
+                    <b>Date</b>: 1945 <br />
+                    <b>Technique</b>: Oil on canvas <br />
+                    <b>Dimensions</b>: 65.5 x 86cm <br />
+                    <b>Signature</b>: Signed and dated lower right: Salvador
+                    Dalí 1945 <br />
+                    <b>Location</b>: Staatliche Museen zu Berlin,
+                    Nationalgalerie, Berlin <br />
+                    <b>Description</b>: This work, painted in Hollywood, owes
+                    less to Dali's own past experiments with double images than
+                    to the work of the sixteenth-century Italian artist Giuseppe
+                    Arcimboldo (1527-93), who was generally admired by
+                    Surrealism enthusiasts. Arcimboldo's paintings, which often
+                    depicts human figures created out of twigs, leaves and
+                    fruit, bear a very close resemblance to the structure on the
+                    left of Dali's painting, which might be where Dali got his
+                    inspirations for this work from.<br />
+                    <b
+                      >Attribution:<a
+                        href="https://commons.wikimedia.org/wiki/File:Salvador_DalI,_Portrait_of_Madame_Isabel_Styler-Tas_(Melancolia),_1945,_Scharf-Gerstenberg_Museum,_Berlin,_(1)_(40205231581).jpg"
+                        >Richard Mortel from Riyadh, Saudi Arabia</a
+                      >,
+                      <a href="https://creativecommons.org/licenses/by/2.0"
+                        >CC BY 2.0</a
+                      >, via Wikimedia Commons</b
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="bax">
+              <h2 data-jarallax-element="0 -200">
+                Gala at the Window Statue
+              </h2>
+              <div class="containerz">
+                <div class="imgBx jarallax">
+                  <img
+                    src="https://cdn.glitch.com/28de17f9-f26d-4799-888c-eed5caea2625%2FDal%C3%AD._Gala.jpg?v=1604547313379"
+                    class="jarallax-img"
+                  />
+                </div>
+                <div class="content" data-jarallax-element="-200 0">
+                  <p>
+                    <b>Date</b>: 1973/76<br />
+                    <b>Technique</b>: Modelled Wax <br />
+                    <b>Dimensions</b>: 23.5 cm (9.2 in) <br />
+                    <b>Original Title</b>: Original title: Gala asomada a la
+                    ventana (aka «Gala a la ventana»)<br />
+                    <b>Description</b>: Gala Diaconovna-Dalí is leaning out of a
+                    window. She looks out on to the dream, on to the fantasy of
+                    her childhood in St. Petersburg, the Northern capital of the
+                    Czars, the French and Italian city which Peter the Great
+                    wanted to open to the Baltic and to Europe.This piece,
+                    shaped like an “A”, was part of Dali’s project to create the
+                    name GALA. His goals – which he never fulfilled – was to
+                    complete the set with two more sculptures in the shape of
+                    “G” and “L”.<br />
+                    <b
+                      >Attribution:
+                      <a
+                        href="https://commons.wikimedia.org/wiki/File:Dal%C3%AD._Gala.JPG"
+                        >No machine-readable author provided. Manuel González
+                        Olaechea assumed (based on copyright claims).</a
+                      >,
+                      <a href="https://creativecommons.org/licenses/by/3.0"
+                        >CC BY 3.0</a
+                      >, via Wikimedia Commons</b
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="bax">
+              <h2 data-jarallax-element="0 200">
+                The Nobility of Time
+              </h2>
+              <div class="containerz">
+                <div class="imgBx jarallax">
+                  <img
+                    src="https://cdn.glitch.com/28de17f9-f26d-4799-888c-eed5caea2625%2Fsalvador-dali-2527662_1280.jpg?v=1604547301898"
+                    class="jarallax-img"
+                  />
+                </div>
+                <div class="content" data-jarallax-element="-200 0">
+                  <p>
+                    <b>Date</b>: 1984<br />
+                    <b>Technique</b>: Modelled Wax <br />
+                    <b>Dimensions</b>: 16-feet tall (5 meters) <br />
+                    <b>Original Title</b>: Original title: “La Noblesse du
+                    Temps”<br />
+                    <b>Location</b>: Plaça de la Rotonda,Andorra Vella<br />
+                    <b>Description</b>: The nobility of time is a monumental
+                    bronze sculpture, which is weighing 1,400 kilograms and is
+                    rising up to 4.90 meters above the ground. It's made by
+                    Salvador Dali, and it symbolizes the passing time,and how it
+                    dominates over humanity as a whole. There are quite a lot of
+                    art enthusiasts across the globe, who are eager to visit
+                    Andorra just to enjoy this authentic piece of genius.
+                    <br /><b
+                      >Attribution:
+                      <a href="https://www.needpix.com/photo/1025035/"
+                        >From needpix.com.</a
+                      ></b
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="bax">
+              <h2 data-jarallax-element="0 -200">
+                The Rainbow
+              </h2>
+              <div class="containerz">
+                <div class="imgBx jarallax">
+                  <img
+                    src="https://cdn.glitch.com/89bebd75-9266-43eb-a860-078a6c5c0bf5%2FSalvador_Dali_The_Rainbow_1972.jpg?v=1608101897516"
+                    class="jarallax-img"
+                  />
+                </div>
+                <div class="content" data-jarallax-element="-200 0">
+                  <p>
+                    <b>Date</b>: 1972<br />
+                    <b>Technique</b>: Painted Plaster Relief <br />
+                    <b>Dimensions</b>: 29.2 x 47.6 x 2.6 cm <br />
+                    <b>Description</b>: The overall content of The Rainbow
+                    probably deals with the mother-son relationship and
+                    according to historical documents, a fact that Dali
+                    affronted his mother's name and was disowned by his father.
+                    The clues to decipher the work's message of the images are
+                    clear: observe a woman brandishes a hay fork while holding a
+                    child's hand as they run towards a rainbow emerging from a
+                    cataclysmic, rock-strewn, horizon mounted by three figures.
+                    <br /><b
+                      >Attribution:
+                      <a
+                        href="https://commons.wikimedia.org/wiki/File:Salvador_Dali_The_Rainbow_1972.jpg"
+                        >Salvador Dalí</a
+                      >, Public domain, via Wikimedia Commons</b
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="bax">
+              <h2 data-jarallax-element="0 200">
+                Dali Atomicus
+              </h2>
+              <div class="containerz">
+                <div class="imgBx jarallax">
+                  <img
+                    src="https://cdn.glitch.com/89bebd75-9266-43eb-a860-078a6c5c0bf5%2FSalvador_Dali_A_(Dali_Atomicus)_09633u.jpg?v=1608056375345"
+                    class="jarallax-img"
+                  />
+                </div>
+                <div class="content" data-jarallax-element="-200 0">
+                  <p>
+                    <b>Date</b>: 1941<br />
+                    <b>Technique</b>: Photograph <br />
+                    <b>Description</b>: The 1948 work Dali Atomicus explores the
+                    idea of suspension(in midair), depicting three cats flying, water
+                    thrown from a bucket, an easel, a footstool and Salvador
+                    Dalí all in mid-air. The title of the
+                    photograph is a reference to Dalí's work Leda Atomica (at
+                    that which can be seen in the right of the photograph behind
+                    the two cats.) <br /><b
+                      >Attribution:
+                      <a href="https://commons.wikimedia.org/wiki/File:Salvador_Dali_A_(Dali_Atomicus)_09633u.jpg">Philippe Halsman</a>, Public domain, via Wikimedia Commons</b
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <script src="jarallax.js"></script>
+          <script src="jarallax-element.js"></script>
+          <script type="text/javascript">
+            jarallax(document.querySelectorAll(".jarallax"), {
+              speed: 0.5
+            });
+          </script>
+          <script>
+          
+          function myFunction() {
+  document.querySelector(".letters-left").style.color = "orange";
+}
+          </script>
+        </div>
+
+        <div class="shadow one"></div>
+        <div class="shadow two"></div>
+      </div>
+
+      <div class="links">
+        <ul>
+          <li>
+            <a href="/index.html" style="--i: 0.05s;">Home</a>
+          </li>
+          <li>
+            <a href="/about.html" style="--i: 0.15s;">About</a>
+          </li>
+          <li>
+            <a href="/art.html" style="--i: 0.2s;">Works</a>
+          </li>
+          <li>
+            <a href="/contact.html" style="--i: 0.3s;">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>

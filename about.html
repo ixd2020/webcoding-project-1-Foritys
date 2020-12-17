@@ -1,44 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>About Artist</title>
-    
+    <title>About</title>
+
     <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/about.css">
-    
+    <link rel="stylesheet" href="/about.css" />
+
     <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-  </head>  
-  <body style="background-color:lightgrey;"></body>
-  
-  
+    <script src="/about.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
+  </head>
   <body>
     <div class="container">
-  <li><a href="/index.html" class="cool-link">Home</a></li>
-  <li><a href="/info.html" class="cool-link">Info</a></li>
-  <li><a href="/news.html" class="cool-link">News</a></li>
-  <li><a href="/about.html" class="cool-link">About</a></li>
-  <li><a href="/art.html" class="cool-link">Works</a></li>
-  <li><a href="#" class="cool-link">Contact</a></li>
-</div>
-    <h1 style="font-size:30px; text-align:center;">About artist</h1>
-    
+      <div class="navbar">
+        <div class="menu">
+          <h3 class="logo">Salvador<span>Dali</span></h3>
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+          </div>
+        </div>
+      </div>
 
-  <div class="abtdeli" id="abtdeli">
-   <img src="https://cdn.glitch.com/28de17f9-f26d-4799-888c-eed5caea2625%2FSalvador_Dal%C3%AD_1939.jpg?v=1604547304246" width="190" height="250">
-  </div>
-    <p style="text-align:center;">
-      His works are often the portrayal of his own unique interests in food, animals and science. His portfolio includes painting, graphic arts, film, sculpture, design and photography, and sometimes collaboration with different artists. He was also interested in writing fiction, poetry, autobiography, essays and criticism. The most common themes for his work includes dreams, subconscious, sexuality, religion, science and his own personal closest relationships. However to the dismay of many who often held his work in high regard, his eccentric  and overall public behavior often drew more attention than his artwork towards himself.
-    </p>
-  <div class="abtdeli2" id="abtdeli2">
-    <img src="https://cdn.glitch.com/28de17f9-f26d-4799-888c-eed5caea2625%2FSalvador_DalI%2C_Portrait_of_Madame_Isabel_Styler-Tas_(Melancolia)%2C_1945%2C_Scharf-Gerstenberg_Museum%2C_Berlin%2C_(2)_(26332791998).jpg?v=1604547340834" width="400" height="150">
+      <div class="main-container">
+        <div class="main">
+          <section>
+            <header>
+             <img src="https://cdn.glitch.com/28de17f9-f26d-4799-888c-eed5caea2625%2F1546795465.svg?v=1604547304438"   width="150"
+        height="100">
+            </header>
+            <div class="containerz">
+              <div class="bax">
+                <div class="imgBx1">
+                  <img
+                    src="https://cdn.glitch.com/89bebd75-9266-43eb-a860-078a6c5c0bf5%2FSalvador_Dali.jpg?v=1608056172000"
+                  />
+                  <div class="overlay">
+                    <div class="text1">
+                      <p>
+                        Salvador Domingo Felipe Jacinto Dalí i Domènech, 1st
+                        Marquess of Dalí de Púbol was a Spanish surrealist
+                        artist renowned for his technical skill, precise
+                        draftsmanship and the striking and bizarre images in his
+                        work.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bax">
+                <div class="imgBx2">
+                  <img
+                    src="https://cdn.glitch.com/89bebd75-9266-43eb-a860-078a6c5c0bf5%2FSalvador_Dali_A_(Dali_Atomicus)_09633u.jpg?v=1608056375345"
+                  />
+                  <div class="overlay">
+                    <div class="text2">
+                      <p>
+                        Born in Figueres, Catalonia, Dalí received his formal
+                        education in fine arts at Madrid. Influenced by
+                        Impressionism and the Renaissance masters from a young
+                        age, he became increasingly attracted to Cubism and
+                        avant-garde movements.[3] He moved closer to Surrealism
+                        in the late 1920s and joined the Surrealist group in
+                        1929, soon becoming one of its leading exponents.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bax">
+                <div class="imgBx3">
+                  <img
+                    src="https://cdn.glitch.com/89bebd75-9266-43eb-a860-078a6c5c0bf5%2FSalvador_Dali_Poster_Allan_Warren.jpg?v=1608056152004"
+                  />
+                  <div class="overlay">
+                    <div class="text3">
+                      <p>
+                        His best-known work, The Persistence of Memory, was
+                        completed in August 1931, and is one of the most famous
+                        Surrealist paintings. Dalí lived in France throughout
+                        the Spanish Civil War (1936 to 1939) before leaving for
+                        the United States in 1940 where he achieved commercial
+                        success. He returned to Spain in 1948 where he announced
+                        his return to the Catholic faith and developed his
+                        "nuclear mysticism" style, based on his interest in
+                        classicism, mysticism and recent scientific
+                        developments.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bax">
+                <div class="imgBx4">
+                  <img
+                    src="https://cdn.glitch.com/89bebd75-9266-43eb-a860-078a6c5c0bf5%2FDali_Allan_Warren.jpg?v=1608056137988"
+                  />
+                  <div class="overlay">
+                    <div class="text4">
+                      <p>
+                        Dalí's artistic repertoire included painting, graphic
+                        arts, film, sculpture, design and photography, at times
+                        in collaboration with other artists. He also wrote
+                        fiction, poetry, autobiography, essays and criticism.
+                        Major themes in his work include dreams, the
+                        subconscious, sexuality, religion, science and his
+                        closest personal relationships. To the dismay of those
+                        who held his work in high regard, and to the irritation
+                        of his critics, his eccentric and ostentatious public
+                        behavior often drew more attention than his artwork.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <script type="text/javascript">
+            const imgBx = document.querySelectorAll(".imgBx1");
+            imgBx.forEach(popup =>
+              popup.addEventListener("click", () => {
+                popup.classList.toggle("active");
+              })
+            );
+          </script>
+          <script type="text/javascript">
+            const imgBx = document.querySelectorAll(".imgBx3");
+            imgBx.forEach(popup =>
+              popup.addEventListener("click", () => {
+                popup.classList.toggle("active");
+              })
+            );
+          </script>
+          <script type="text/javascript">
+            const imgBx = document.querySelectorAll(".imgBx2");
+            imgBx.forEach(popup =>
+              popup.addEventListener("click", () => {
+                popup.classList.toggle("active");
+              })
+            );
+          </script>
+          <script type="text/javascript">
+            const imgBx = document.querySelectorAll(".imgBx4");
+            imgBx.forEach(popup =>
+              popup.addEventListener("click", () => {
+                popup.classList.toggle("active");
+              })
+            );
+          </script>
+          <script>
+            $(document).ready(function() {
+              $("button").click(function() {
+                $("iframe").toggle();
+              });
+            });
+          </script>
+        </div>
+
+        <div class="shadow one"></div>
+        <div class="shadow two"></div>
+      </div>
+
+      <div class="links">
+        <ul>
+          <li>
+            <a href="/index.html" style="--i: 0.05s;">Home</a>
+          </li>
+          <li>
+            <a href="/about.html" style="--i: 0.15s;">About</a>
+          </li>
+          <li>
+            <a href="/art.html" style="--i: 0.2s;">Works</a>
+          </li>
+          <li>
+            <a href="/contact.html" style="--i: 0.3s;">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  <p style="text-align:center;">
-    There are currently two major museums that are devoted to showcasing Salvador Dalí's work: the Dalí Theatre-Museum in Figueres, Spain, and the Salvador Dalí Museum in St. Petersburg, Florida.
-    </p>
   </body>
 </html>

@@ -77,11 +77,11 @@ function animateValue(id, start, end, duration) {
     run();
 }
 
-animateValue("value", 1, 53, 6000);
+animateValue("value", 1, 53, 11000);
 
-animateValue("value2", 1000, 1500, 6000);
+animateValue("value2", 1000, 1500, 11000);
 
-animateValue("value3", 1, 30, 6000);
+animateValue("value3", 1, 30, 11000);
 
 var slideIndex = 0;
 showSlides();
@@ -102,3 +102,4 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
